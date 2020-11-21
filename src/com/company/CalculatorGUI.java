@@ -86,6 +86,7 @@ public class CalculatorGUI extends JFrame {
         tanBtn.setText("tan/cot");
         eng.add(tanBtn);
         JButton expBtn = new JButton();
+        eng.add(tanBtn);
         expBtn.setText("log/exp");
         eng.add(expBtn);
         JButton shiftBtn = new JButton();
