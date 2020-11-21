@@ -40,7 +40,7 @@ public class CalculatorGUI extends JFrame {
         simple = new JPanel();
         //simple.setSize(200,200);
         //simple.setLocation(10, 150);
-        simple.setLayout(new GridLayout(5,3));
+        simple.setLayout(new GridLayout(4,4));
 
         setNumber(simple);
 
@@ -68,7 +68,7 @@ public class CalculatorGUI extends JFrame {
         engMain.setLayout(new BorderLayout());
 
         JPanel eng = new JPanel();
-        eng.setLayout(new GridLayout(7,3));
+        eng.setLayout(new GridLayout(6,4));
 
         //Number
         setNumber(eng);
@@ -114,7 +114,7 @@ public class CalculatorGUI extends JFrame {
      */
     public void setNumber(JPanel simple){
 
-        for (int i = 9; i > 0; i--) {
+        for (int i = 9; i > 1; i--) {
             JButton btn = new JButton();
             btn.setText("" + i);
             simple.add(btn);
@@ -123,6 +123,9 @@ public class CalculatorGUI extends JFrame {
         JButton sumBtn = new JButton();
         sumBtn.setText("+");
         simple.add(sumBtn);
+        JButton oneBtn = new JButton();
+        oneBtn.setText("1");
+        simple.add(oneBtn);
         JButton zeroBtn = new JButton();
         zeroBtn.setText("0");
         simple.add(zeroBtn);
@@ -135,6 +138,9 @@ public class CalculatorGUI extends JFrame {
         JButton modBtn = new JButton();
         modBtn.setText("%");
         simple.add(modBtn);
+        JButton divBtn = new JButton();
+        divBtn.setText("/");
+        simple.add(divBtn);
         JButton doBtn = new JButton();
         doBtn.setText("=");
         simple.add(doBtn);
